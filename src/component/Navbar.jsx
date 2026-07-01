@@ -2,13 +2,11 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    // 'absolute top-0' makes it float over the hero
-    // 'mix-blend-difference' ensures white text inverts against light backgrounds
     <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 text-white mix-blend-difference">
       
       {/* Logo Area */}
       <div className="text-2xl font-bold font-mono tracking-wider cursor-pointer">
-         Aman<span className="text-blue-500">.</span>
+          Aman<span className="text-blue-500">.</span>
       </div>
 
       {/* Desktop Navigation Links */}
@@ -25,8 +23,12 @@ const Navbar = () => {
         <li>
           <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
         </li>
+        {/* ADDED: Contact Link */}
+        <li>
+          <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
+        </li>
         
-        {/* UPDATED: Resume Download Link */}
+        {/* Resume Download Link */}
         <li>
           <a 
             href="/resume.pdf" 
